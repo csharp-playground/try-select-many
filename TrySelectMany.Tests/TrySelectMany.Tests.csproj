@@ -44,12 +44,20 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Spec\EricTests.cs" />
     <Compile Include="Spec\TomasTests.cs" />
+    <Compile Include="Spec\SelectManyEnumerableTests.cs" />
+    <Compile Include="Spec\TestBase.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Spec\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TrySelectMany\TrySelectMany.csproj">
+      <Project>{C180C1F7-3DF9-4105-9FDC-9864AFB44C26}</Project>
+      <Name>TrySelectMany</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

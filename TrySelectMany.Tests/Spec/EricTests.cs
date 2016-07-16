@@ -35,5 +35,7 @@ namespace TrySelectMany.Tests {
 			query.Count().Should().Be(6);
 		}
 	}
+
+	// No idea
 }
 
