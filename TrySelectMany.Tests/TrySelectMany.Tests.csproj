@@ -31,14 +31,17 @@
     <Reference Include="Fixie">
       <HintPath>..\packages\Fixie.1.0.1\lib\net45\Fixie.dll</HintPath>
     </Reference>
-    <Reference Include="FluentAssertions.Core">
-      <HintPath>..\packages\FluentAssertions.4.12.0\lib\net45\FluentAssertions.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="FluentAssertions">
-      <HintPath>..\packages\FluentAssertions.4.12.0\lib\net45\FluentAssertions.dll</HintPath>
-    </Reference>
     <Reference Include="System.Xml" />
     <Reference Include="System.Xml.Linq" />
+    <Reference Include="nunit.framework">
+      <HintPath>..\packages\NUnit.3.4.1\lib\net45\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="FluentAssertions.Core">
+      <HintPath>..\packages\FluentAssertions.4.13.1\lib\net45\FluentAssertions.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="FluentAssertions">
+      <HintPath>..\packages\FluentAssertions.4.13.1\lib\net45\FluentAssertions.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -52,12 +55,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Spec\" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\TrySelectMany\TrySelectMany.csproj">
-      <Project>{C180C1F7-3DF9-4105-9FDC-9864AFB44C26}</Project>
-      <Name>TrySelectMany</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
